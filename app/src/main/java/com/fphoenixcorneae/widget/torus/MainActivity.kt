@@ -13,11 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<StatisticsPercentageTorusView>(R.id.sptvStatistics1)
+            // 添加统计项
             .add(Color.parseColor("#ffa514"), 10)
             .add(Color.parseColor("#f26034"), 8)
             .add(Color.parseColor("#e42f2f"), 4)
             .add(Color.parseColor("#34dede"), 2)
+            // 设置生命周期
             .setLifecycle(lifecycle)
+            // 显示动画
             .showAnim()
         findViewById<StatisticsPercentageTorusView>(R.id.sptvStatistics2)
             .add(Color.parseColor("#30acf4"), 5)
